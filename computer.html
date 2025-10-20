@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -8,10 +8,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>JINXA - Computadoras</title>
+      <meta name="keywords" content="JINXA, computadoras, PC, tecnología, hardware, venta, mantenimiento">
+      <meta name="description" content="Descubre las mejores computadoras y equipos de escritorio de JINXA. Rendimiento, durabilidad y tecnología de punta para hogar, empresa o institución.">
+      <meta name="author" content="JINXA">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -28,17 +28,62 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+      <!-- estilos adicionales -->
+      <style>
+         /* Título principal */
+         .computer-section h2 {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 20px;
+         }
+
+         /* Subtítulos */
+         .computer-section h3 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-top: 20px;
+         }
+
+         /* Descripción */
+         .computer-section p {
+            font-size: 16px;
+            color: #000;
+            line-height: 1.6;
+         }
+
+         /* Separadores */
+         .computer-section hr {
+            border: 2px solid #ffffff;
+            margin: 20px 0;
+         }
+
+         /* Botón Ver Catálogo */
+         .read_more {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #007bff;
+            color: #fff !important;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+         }
+
+         .read_more:hover {
+            background: #0056b3;
+            color: #fff !important;
+         }
+      </style>
    </head>
-   <!-- body -->
    <body class="main-layout inner_posituong computer_page">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="images/loading.gif" alt="Cargando JINXA" /></div>
       </div>
       <!-- end loader -->
+
       <!-- header -->
       <header>
-         <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
                <div class="row">
@@ -46,41 +91,42 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="images/logo.png" alt="Logo JINXA" /></a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                           aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                              </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="computer.html">Computadoras</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item  active">
-                                 <a class="nav-link" href="computer.html">Computer</a>
+                                 <a class="nav-link" href="laptop.html">Laptops</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
+                                 <a class="nav-link" href="product.html">Productos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Products</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="contact.html">Contáctanos</a>
                               </li>
                               <li class="nav-item d_none">
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Login</a>
+                                 <a class="nav-link" href="#">Iniciar Sesión</a>
                               </li>
                            </ul>
                         </div>
@@ -90,36 +136,58 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
       <!-- end header -->
-      <!-- laptop  section -->
-      <div class="laptop">
+
+      <!-- computer section -->
+      <div class="laptop computer-section">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
                   <div class="titlepage">
-                     <p>Every Computer and laptop</p>
-                     <h2>Up to 40% off !</h2>
-                     <a class="read_more" href="#">Shop Now</a>
+                     <p>Las mejores Computadoras del mercado</p>
+                     <h2>¡Rendimiento garantizado con JINXA!</h2>
+                     <p>
+                        En <strong>JINXA</strong> te ofrecemos computadoras de escritorio de alto rendimiento, diseñadas para cubrir las necesidades de tu empresa, hogar o centro educativo.  
+                        Equipos ensamblados con los mejores componentes y soporte técnico especializado.  
+                        Ideal para trabajo profesional, diseño, gaming y tareas administrativas.
+                     </p>
+
+                     <hr>
+
+                     <h3>Ofertas Exclusivas</h3>
+                     <p>
+                        Aprovecha descuentos de hasta el <strong>40%</strong> en nuestras líneas de PCs empresariales, gamers y todo en uno.  
+                        Combina potencia, eficiencia y diseño moderno con el respaldo de JINXA.
+                     </p>
+
+                     <hr>
+
+                     <h3>Soporte y Garantía</h3>
+                     <p>
+                        Cada equipo JINXA cuenta con garantía certificada y mantenimiento preventivo.  
+                        Nuestro equipo técnico está disponible para asistirte en todo momento, asegurando que tu inversión esté protegida y tu productividad no se detenga.
+                     </p>
+
+                     <a class="read_more" href="#">Ver Catálogo</a>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="laptop_box">
-                     <figure><img src="images/pc.png" alt="#"/></figure>
+                     <figure><img src="images/pc.png" alt="Computadora JINXA"/></figure>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      </div>
-      <!-- end laptop  section -->
-      <!--  footer -->
+      <!-- end computer section -->
+
+      <!-- footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="#"/>
+                     <img class="logo1" src="images/logo1.png" alt="Logo Footer JINXA"/>
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -128,22 +196,26 @@
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>About Us</h3>
+                     <h3>Sobre Nosotros</h3>
                      <ul class="about_us">
-                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                        <li>JINXA ofrece soluciones tecnológicas innovadoras con garantía y soporte integral.  
+                           Nos especializamos en equipos informáticos de alta calidad y servicios personalizados.
+                        </li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Contact Us</h3>
+                     <h3>Contáctanos</h3>
                      <ul class="conta">
-                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                        <li>📍 Ricaurte, Ecuador</li>
+                        <li>📞 0998906191</li>
+                        <li>✉️ jinxavaldez@jinxa.com</li>
                      </ul>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
+                        <h3>Boletín</h3>
+                        <input class="enter" placeholder="Ingresa tu correo" type="text" name="email">
+                        <button class="sub_btn">Suscribirse</button>
                      </form>
                   </div>
                </div>
@@ -152,7 +224,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                        <p>© 2025 JINXA. Todos los derechos reservados. Diseño adaptado de <a href="https://html.design/">Free Html Templates</a></p>
                      </div>
                   </div>
                </div>
@@ -160,6 +232,7 @@
          </div>
       </footer>
       <!-- end footer -->
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -170,4 +243,3 @@
       <script src="js/custom.js"></script>
    </body>
 </html>
-
