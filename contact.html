@@ -8,25 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* General */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #fff;
             min-height: 100vh;
-            overflow-x: hidden;
         }
-        /* Animaciones al cargar */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px);}
-            to { opacity: 1; transform: translateY(0);}
-        }
-        .fade-in-up { animation: fadeInUp 1s ease forwards; }
-        
-        /* Header */
         .contact-header {
             text-align: center;
-            padding: 70px 20px 40px;
+            padding: 60px 20px 30px;
         }
         .contact-header h1 {
             font-size: 60px;
@@ -41,7 +31,6 @@
             margin: auto;
             color: #f0f0f0;
         }
-        /* Formulario */
         .contact-form {
             background: rgba(255,255,255,0.05);
             padding: 50px 30px;
@@ -60,7 +49,6 @@
             left: 15px;
             color: #ffd700;
             font-size: 18px;
-            transition: 0.3s;
         }
         .form-control {
             padding-left: 45px;
@@ -73,7 +61,7 @@
         }
         .form-control:focus {
             background: rgba(255,255,255,0.35);
-            box-shadow: 0 0 15px rgba(255,255,255,0.6);
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
             color: #000;
         }
         textarea.form-control {
@@ -81,45 +69,28 @@
             padding-top: 15px;
             resize: none;
         }
-        /* Botón animado */
         .send_btn {
             background: #ffd700;
             color: #1e3c72;
             font-weight: bold;
             border: none;
             border-radius: 50px;
-            padding: 15px 45px;
+            padding: 15px 40px;
             font-size: 18px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
             transition: 0.3s;
-        }
-        .send_btn::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0; left: -100%;
-            background: rgba(255,255,255,0.3);
-            transition: 0.5s;
-        }
-        .send_btn:hover::after {
-            left: 0;
+            cursor: pointer;
         }
         .send_btn:hover {
+            background: #ffc107;
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         }
-        /* Mensajes animados */
         .success-msg, .error-msg {
             text-align: center;
             font-size: 18px;
             margin-top: 20px;
-            padding: 12px;
+            padding: 10px;
             border-radius: 10px;
-            opacity: 0;
-            animation: fadeInUp 0.7s ease forwards;
         }
         .success-msg { background: #28a745; color: #fff; }
         .error-msg { background: #dc3545; color: #fff; }
@@ -127,7 +98,7 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="contact-header fade-in-up">
+    <div class="contact-header">
         <h1>JINXA</h1>
         <p>En JINXA nos dedicamos a ofrecer productos confiables y soporte completo para tus computadoras.  
         Contáctanos y recibe atención rápida, profesional y segura.</p>
@@ -137,7 +108,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="contact-form fade-in-up">
+                <div class="contact-form">
                     <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $nombre = strip_tags(trim($_POST["Nombre"]));
