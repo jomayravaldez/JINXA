@@ -1,84 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
    <head>
-      <!-- Metadatos básicos -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- Metas móviles -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- Metas del sitio -->
       <title>JINXA - Contáctanos</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- CSS de Bootstrap -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+
       <!-- Estilos principales -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive -->
       <link rel="stylesheet" href="css/responsive.css">
-      <!-- Ícono -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar personalizado -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Iconos -->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
       <style>
-         /* BOTONES PERSONALIZADOS */
-         .send_btn, .sub_btn {
-            background-color: #1e3c72;
-            color: #fff;
-            border: none;
-            padding: 12px 40px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            cursor: pointer;
-         }
-
-         .send_btn:hover, .sub_btn:hover {
-            background-color: #2a5298;
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-         }
-
-         .bottom_form .enter {
-            border-radius: 25px;
-            padding: 10px 15px;
-            border: 1px solid #ccc;
-         }
-
-         /* Traducción visual */
-         .titlepage h2 {
-            font-weight: bold;
-            color: #1e3c72;
-         }
-
-         footer h3 {
-            color: #1e3c72;
-         }
+         body { font-family: Arial, sans-serif; background: #f0f2f5; }
+         .contact { background: linear-gradient(to right, #1e3c72, #2a5298); padding: 80px 0; color: #fff; }
+         .contact h1 { font-size: 50px; font-weight: bold; color: #ffd700; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); margin-bottom: 15px; }
+         .contact p { font-size: 20px; color: #f0f0f0; max-width: 800px; margin: auto; }
+         .main_form { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.4); }
+         .contactus, .textarea { width:100%; padding: 15px; border-radius: 10px; border: none; background: rgba(255,255,255,0.2); color: #fff; font-size: 16px; margin-bottom: 15px; }
+         .textarea { min-height: 150px; padding: 20px; }
+         .contactus:focus, .textarea:focus { outline: none; background: rgba(255,255,255,0.35); }
+         .send_btn { padding: 15px 40px; border-radius: 50px; border:none; background: #ffd700; color:#1e3c72; font-weight:bold; font-size:18px; cursor:pointer; transition: 0.3s; }
+         .send_btn:hover { background: #ffc107; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.3); }
+         .success-message { display: none; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; color: #00ff88; margin-top: 20px; font-weight: bold; text-align: center; }
       </style>
-
-      <!-- Compatibilidad IE -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   <!-- body -->
-   <body class="main-layout inner_posituong contact_page">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
-      <!-- end loader -->
 
+   <body>
       <!-- header -->
       <header>
-         <!-- header inner -->
          <div class="header">
             <div class="container-fluid">
                <div class="row">
@@ -93,36 +45,16 @@
                   </div>
                   <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" 
-                           aria-controls="navbarsExample04" aria-expanded="false" aria-label="Alternar navegación">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Inicio</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.html">Acerca de</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computadoras</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptops</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="product.html">Productos</a>
-                              </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="contact.html">Contáctanos</a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Iniciar sesión</a>
-                              </li>
+                              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                              <li class="nav-item"><a class="nav-link" href="about.html">Sobre Nosotros</a></li>
+                              <li class="nav-item"><a class="nav-link" href="computer.html">Computadoras</a></li>
+                              <li class="nav-item"><a class="nav-link" href="laptop.html">Laptops</a></li>
+                              <li class="nav-item active"><a class="nav-link" href="contact.html">Contáctanos</a></li>
                            </ul>
                         </div>
                      </nav>
@@ -131,102 +63,48 @@
             </div>
          </div>
       </header>
-      <!-- end header -->
+      <!-- Fin del header -->
 
-      <!-- Contacto -->
+      <!-- Sección de contacto -->
       <div class="contact">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Contáctanos Ahora</h2>
-                  </div>
+               <div class="col-md-12 text-center mb-5">
+                  <h1>JINXA</h1>
+                  <p>En JINXA estamos siempre listos para ayudarte. Contáctanos para resolver tus dudas, recibir soporte técnico o para cualquier consulta sobre nuestros productos.  
+                     ¡Tu satisfacción y la seguridad de tus dispositivos son nuestra prioridad!
+                  </p>
                </div>
             </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Nombre" type="text" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Correo Electrónico" type="email" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Número de Teléfono" type="text" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Escribe tu mensaje aquí..." name="Message"></textarea>
-                        </div>
-                        <div class="col-md-12 text-center">
-                           <button class="send_btn" type="submit">Enviar</button>
-                        </div>
+            <div class="row justify-content-center">
+               <div class="col-md-8">
+                  <form id="contactForm" class="main_form">
+                     <input class="contactus" placeholder="Nombre" type="text" name="Name" required> 
+                     <input class="contactus" placeholder="Correo Electrónico" type="email" name="Email" required>
+                     <input class="contactus" placeholder="Número de Teléfono" type="tel" name="Phone">
+                     <textarea class="textarea" placeholder="Escribe tu mensaje aquí..." name="Message" required></textarea>
+                     <div class="text-center">
+                        <button class="send_btn" type="submit">Enviar Mensaje</button>
                      </div>
+                     <div class="success-message" id="successMessage">¡Gracias! Tu mensaje ha sido enviado con éxito.</div>
                   </form>
                </div>
             </div>
          </div>
       </div>
-      <!-- end contact -->
 
-      <!-- Footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo1.png" alt="Logo JINXA"/>
-                     <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Sobre Nosotros</h3>
-                     <ul class="about_us">
-                        <li>Nos dedicamos a ofrecer soluciones tecnológicas confiables y modernas.  
-                           Contáctanos para conocer más sobre nuestros servicios.</li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <h3>Contáctanos</h3>
-                     <ul class="conta">
-                        <li>Dirección: Av. Principal 123<br>Ciudad Tecnológica, Ecuador</li>
-                        <li>Teléfono: +593 999 123 456</li>
-                        <li>Correo: soporte@jinxa.com</li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <form class="bottom_form">
-                        <h3>Boletín</h3>
-                        <input class="enter" placeholder="Introduce tu correo electrónico" type="text" name="email">
-                        <button class="sub_btn" type="button">Suscribirse</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2025 Todos los derechos reservados. Diseñado por <a href="#">JINXA Tech</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-
-      <!-- Archivos JavaScript -->
+      <!-- Scripts -->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+
+      <script>
+         // Simula el envío del formulario
+         document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+            this.reset();
+         });
+      </script>
    </body>
 </html>
